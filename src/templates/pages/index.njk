@@ -1,21 +1,23 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <section class="Hero">
-        <div class="Hero-content">
+    <main class="Hero">
+        <article class="Hero-content">
             <h1 class="Hero-title">Hi, I’m Aleksandar Goševski</h1>
             <h2 class="Hero-description">Software Engineer</h2>
             <p class="Hero-text">
                 I focus on combining modern technologies to build stable and sophisticated web applications.
             </p>
+
+            <a class="Hero-button" href="/blog">Checkout Blog</a>
+
             <ul class="Social">
-                <li class="Social-item"><a class="Hero-button" href="/blog">Checkout Blog</a></li>
                 <li class="Social-item is-icon"><a class="Social-icon Social-icon__github" href="https://www.github.com/goschevski/">Github</a></li>
                 <li class="Social-item is-icon"><a class="Social-icon Social-icon__linkedin" href="https://www.linkedin.com/in/goschevski/">Linkedin</a></li>
                 <li class="Social-item is-icon"><a class="Social-icon Social-icon__rss" href="/rss.xml">RSS</a></li>
             </ul>
-        </div>
+        </article>
 
-        <img class="Hero-image" src="/aleksandar.png?{{ timestamp }}" alt="Aleksandar Goševski" width="231" height="231">
-    </section>
+        <img class="Hero-image" src="/aleksandar.webp?{{ timestamp }}" alt="Aleksandar Goševski" width="231" height="231">
+    </main>
 {% endblock %}

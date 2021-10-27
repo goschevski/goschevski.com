@@ -2,7 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     color: white;
-    background: url('background.jpg') center center/cover no-repeat;
+    background: url('background.webp') center center/cover no-repeat;
 
     display: flex;
     flex-direction: column-reverse;
@@ -55,11 +55,12 @@
 }
 
 .Hero-text {
-    margin-bottom: 2em;
     font-size: 22px;
 }
 
 .Hero-button {
+    display: inline-block;
+    margin-top: 2em;
     padding: 1em 1.5em;
     border-radius: 100px;
     border: 1px solid white;

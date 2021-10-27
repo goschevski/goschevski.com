@@ -1,5 +1,5 @@
 .Social {
-    margin: 0;
+    margin: 2em 0 0 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -7,11 +7,14 @@
     justify-content: center;
 
     @media (--medium) {
+        margin-left: 2em;
+        display: inline-flex;
         flex-wrap: nowrap;
         justify-content: unset;
     }
 
     &.is-centered {
+        margin: 0;
         justify-content: center;
     }
 
@@ -25,7 +28,11 @@
 }
 
 .Social-item {
-    margin-right: 2em;
+    margin-right: 2.5em;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     @media (--medium) {
       margin-right: 1em;
@@ -34,16 +41,6 @@
     &.is-icon {
         width: 24px;
         height: 24px;
-    }
-
-    &:first-child {
-        flex-basis: 100%;
-        margin-bottom: 3em;
-
-        @media (--medium) {
-            flex-basis: auto;
-            margin-bottom: 0;
-        }
     }
 }
 
