@@ -1,0 +1,96 @@
+:root {
+  --font-primary: Bitter, serif;
+  /* --mainColor: #d1a542; */
+  --main-color: #186356;
+  --sidebar-width: 350px;
+}
+
+/* Media Queries */
+@custom-media --small (width >= 480px);
+@custom-media --medium (width >= 600px);
+@custom-media --large (width >= 900px);
+@custom-media --xlarge (width >= 1200px);
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Bitter'),
+    url('../assets/fonts/bitter-v25-latin-ext_latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter'),
+    url('~/assets/fonts/bitter-v25-latin-ext_latin-regular.woff2')
+      format('woff2');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 1.3vw, 18px);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+
+  &.lock-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--main-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* utilities */
+
+.u-screenReaders {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: polygon(0 0, 0 0, 0 0) !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+}

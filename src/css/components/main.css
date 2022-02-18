@@ -1,7 +1,0 @@
-.Main {
-    padding: 2em;
-
-    @media (--medium) {
-        margin-left: 270px;
-    }
-}
