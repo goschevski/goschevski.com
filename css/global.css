@@ -15,6 +15,7 @@
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local('Bitter'),
     url('../assets/fonts/bitter-v25-latin-ext_latin-300.woff2') format('woff2');
 }
@@ -23,6 +24,7 @@
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Bitter'),
     url('~/assets/fonts/bitter-v25-latin-ext_latin-regular.woff2')
       format('woff2');
