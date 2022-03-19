@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2 class="u-screenReaders">Articles</h2>
+  <section aria-labelledby="articles-title">
+    <h2 id="articles-title" class="u-screenReaders">Articles</h2>
 
     <ArticlesList :articles="articles" />
   </section>

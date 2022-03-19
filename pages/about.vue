@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <article class="about">
     <h2>About me</h2>
     <p>
       I'm Aleksandar Goševski, software developer based in Serbia. I focus on
@@ -27,7 +27,7 @@
         Other (design patterns, single-page apps, speed optimisation, etc.)
       </li>
     </ul>
-  </section>
+  </article>
 </template>
 
 <script>

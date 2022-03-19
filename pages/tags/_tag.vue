@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2>#{{ $route.params.tag }}</h2>
+  <section aria-labelledby="tag-title">
+    <h2 id="tag-title">#{{ $route.params.tag }}</h2>
 
     <ArticlesList :articles="articles" />
   </section>
