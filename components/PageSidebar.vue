@@ -77,6 +77,10 @@
     text-decoration: none;
   }
 
+  & a:focus {
+    outline-offset: 5px;
+  }
+
   & a::after {
     content: '';
     position: absolute;
@@ -108,6 +112,10 @@
     text-indent: -9999px;
     overflow: hidden;
     opacity: 0.8;
+
+    &:focus {
+      outline-offset: 5px;
+    }
 
     &:hover {
       opacity: 1;

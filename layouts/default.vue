@@ -78,10 +78,13 @@ export default {
   position: fixed;
   top: 1em;
   left: 1em;
-  color: #fff;
   z-index: 3;
   transform: translateY(-1000%);
   transition: transform 0.3s;
+  background: white;
+  padding: 0.5em;
+  border-radius: 3px;
+  color: var(--main-color);
 
   &:focus {
     transform: translateY(0%);
