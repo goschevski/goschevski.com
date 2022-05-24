@@ -20,7 +20,7 @@ Your app will fail and you don't want manully to login to machine and restart pr
 
 ### Tools doesn't replace knowledge
 
-I tried doing all of this things by myself, I even wrote about ansible and how it's great, but ansible won't solve your problem. It will help you do things easier, but it won't setup server for you, it doesn't know how - you need to tell it. So even if you find perfect tool like ansible, you still need to learn bunch of things that maybe you don't care about.
+I tried doing all of this things by myself, I even [wrote about ansible](/the-mighty-ansible) and how it's great, but ansible won't solve your problem. It will help you do things easier, but it won't setup server for you, it doesn't know how - you need to tell it. So even if you find perfect tool like ansible, you still need to learn bunch of things that maybe you don't care about.
 
 ### [Render.com](https://render.com)
 
