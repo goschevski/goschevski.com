@@ -2,11 +2,7 @@
   <article class="about">
     <h2>About me</h2>
     <p>
-      I'm Aleksandar Goševski, software developer based in Serbia. I focus on
-      combining modern technologies to build stable and sophisticated web
-      applications. I started my journey with HTML &amp; CSS back in 2007, but I
-      didn't stopped there. In the meantime I tried bunch of other technologies
-      like PHP, JavaScript (both client and server), Go, etc.
+      I'm Aleksandar Goševski, software developer based in Serbia. I focus on combining modern technologies to build stable and sophisticated web applications and APIs. I started my journey with HTML &amp; CSS back in 2007, but I didn't stopped there. In the meanwhile I worked with variety of other technologies including PHP, JavaScript, Node.js, Go, etc.
     </p>
     <p>
       Currently working as a Front-End Team lead at
