@@ -1,7 +1,7 @@
 ---
 collection: posts
-title: 'Simple Grid Mixins'
-description: "Grid systems can be quite complicated. 960.gs, the mother of all grid systems, contains over 600 lines of code! And it's one of the simpler pure-CSS grid systems..."
+title: Simple Grid Mixins
+description: Grid systems can be quite complicated. 960.gs, the mother of all grid systems, contains over 600 lines of code! And it's one of the simpler pure-CSS grid systems...
 createdAt: 2015-11-07
 tags:
   - sass

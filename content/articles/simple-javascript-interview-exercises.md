@@ -1,14 +1,14 @@
 ---
 collection: posts
-title: 'Simple JavaScript Interview Exercises'
-description: 'When you are interviewing someone, you can learn more about them by reviewing how they did some exercises than talking with them about specific technology. Anyone can learn theory from the blog posts, but people rarely understood it...'
+title: Simple JavaScript Interview Exercises
+description: It's fine to talk about technology when interviewing someone, however, it's common to find that when you scratch the surface with some exercises, candidates don't really understand concepts...
 createdAt: 2016-01-14
 tags:
   - javascript
   - programming
 ---
 
-When you are interviewing someone, you can learn more about them by reviewing how they did some exercises than talking with them about specific technology. Anyone can learn theory from the blog posts, but people rarely understood it. To be sure that candidate knows about the topic they are talking about, it's a good thing to test their knowledge with exercises. Exercises shouldn't take too long, and they can instantly show you a skill level of the candidate.
+It's fine to talk about technology when interviewing someone, however, it's common to find that when you scratch the surface with some exercises, candidates don't really understand concepts. So, to ensure that the candidate understands the topic they are discussing, it is a good idea to test their knowledge with exercises that should not take too long and can instantly show you the candidate's skill level.
 
 ### Context (call, apply)
 

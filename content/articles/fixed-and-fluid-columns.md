@@ -1,15 +1,13 @@
 ---
 collection: posts
-title: 'Fixed and Fluid Columns'
-description: 'We can create "one column fixed and one column fluid" layout using different techniques, but most of these solutions are kind of hacky and have some flaws like magic numbers, hard coded values, etc...'
+title: Fixed and Fluid Columns
+description: We can create a "one column fixed and one column fluid" layout using various techniques, but most of these solutions are hacky and have flaws such as magic numbers, hard coded values, and so on...
 createdAt: 2014-05-02
 tags:
   - css
 ---
 
-We can create "one column fixed and one column fluid" layout using different techniques, but most of these solutions are kind of hacky and have some flaws like magic numbers, hard coded values, etc.
-
-We had a discussion on this topic in our office, and we tried to find the best solution. We googled it and tried different ways, but our colleague [Šilja](https://github.com/vladimirsiljkovic) came out with the best one.
+We can create a "one column fixed and one column fluid" layout using various techniques, but most of these solutions are hacky and have flaws such as magic numbers, hard coded values, and so on. In our office, we discussed the issue and attempted to find the best solution. We looked it up on the internet and tried several approaches, but our [colleague](https://github.com/vladimirsiljkovic) came up with the best one.
 
 ### Solution
 
@@ -40,6 +38,6 @@ section {
 }
 ```
 
-This solution works in IE6+ browsers, and it has one flaw, and that is evident when you need to use overflow in a different way in the fluid section. No need for magic numbers or fixed values. Of course, this is the best solution until browsers start supporting flexbox.
+This solution works in IE6+ browsers, but there is one flaw that becomes apparent when you need to use overflow in a different way in the fluid section. There is no need for magic numbers or fixed values. Of course, until browsers support flexbox, this is the best solution.
 
-You can check out the demo on [CodePen](http://codepen.io/goschevski/pen/zDGvh).
+The demo is available on [CodePen](http://codepen.io/goschevski/pen/zDGvh).

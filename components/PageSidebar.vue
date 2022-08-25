@@ -47,8 +47,12 @@
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
-  background: linear-gradient(transparent, rgba(0 0 0 / 40%)) bottom center,
-    url('~assets/img/background.webp') 10% center / cover no-repeat;
+
+  /* background: linear-gradient(transparent, rgba(0 0 0 / 40%)) bottom center, url('~assets/img/background.webp') 10% center / cover no-repeat; */
+
+  background-color: #e7f3ce;
+  background-image: linear-gradient(160deg, #e7f3ce 0%, #186356 100%);
+
 }
 
 .name {

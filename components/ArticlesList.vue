@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+article {
+  margin-bottom: 3em;
+}
+
 .article-title {
   margin-bottom: 0;
 }
