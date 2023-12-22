@@ -1,20 +1,22 @@
 ---
 collection: posts
-title: Programmers have Serbian mentality
-description: People say we Serbs are building houses like we're going to live for thousands of years but we live every day like it's our last. When developing apps, most programmers take a similar approach...
+title: Unveiling the Balkan Mentality in Programming
+description: Drawing interesting connections, it seems that programmers often share a similar mindset with the Serbian approach to constructing houses. While Serbians build homes intended to last for centuries, they embrace each day with a live-for-the-moment mentality. This intriguing comparison can be extended to how programmers tackle their projects.
 createdAt: 2018-03-04
 tags:
   - programming
 ---
 
-People say we Serbs are building houses like we're going to live for thousands of years but we live every day like it's our last. When developing apps, most programmers take a similar approach.
+Drawing interesting connections, it seems that programmers often share a similar mindset with the Serbian approach to constructing houses. While Serbians build homes intended to last for centuries, they embrace each day with a live-for-the-moment mentality. This intriguing comparison can be extended to how programmers tackle their projects.
 
-### How is that?
+### Exploring the Approach
 
-I was working on a ten-year-old project with more names in git blame than some companies' employees. The code was written in the Zend PHP framework, and there were a lot of script and style tags inside templates on the client side. I was initially disappointed with my assignment, but once I started working inside that jungle of code, it became kind of fun. Product folks promised us time for a complete rewrite of the app after we're done with the tasks. That meant only one thing to us: the end justifies the means. Do whatever is needed to make things work. Because all of the code is in one place, it was extremely simple to understand each component of the app.
+Recently, I found myself working on a ten-year-old project with more contributors than some companies have employees. The codebase was built using the Zend PHP framework, and the templates were crowded with countless script and style tags. Initially, I felt a bit disheartened by the assignment, but as I delved into the intricate code jungle, it surprisingly became an enjoyable experience. The product team had promised a complete app rewrite once our tasks were finished, and this "end justifies the means" mindset emerged. The focus shifted to making things work, knowing that improvements could be made later. Having all the code in one place made it remarkably easy to comprehend each component of the app.
 
-We always strive to complete tasks in the most efficient manner possible, with code that is as decoupled, abstract, and extensible as possible. However, apps that we are developing are frequently abandoned or only required update once every two years. When we get back to some old project we're not going to be happy with the project regardless. The first thing we'll notice is the code style that has evolved over time. Second, we will become aware of our lack of skills at that time. Third, our framework, library, or even language may be outdated, deprecated, or no longer popular.
+### Balancing Efficiency and Realism:
 
-### So we shouldn't care?
+Programmers always strive for efficiency, aiming for code that is decoupled, abstract, and extensible. However, it's worth noting that many of the applications we develop often end up abandoned or requiring updates only every few years. Returning to an old project often leads to dissatisfaction. First, we notice how our coding style has evolved over time. Second, we become aware of our past limitations and lack of skills. Lastly, we realize that the frameworks, libraries, or programming languages we employed might have become outdated, deprecated, or fallen out of favor.
 
-Of course not. We should continue what we're doing because that's what makes our job fun. However, keep this in mind when you are working on something simple but attempting to make it "smart". Don't try to solve problems that do not exist yet.
+### Striking the Right Balance
+
+Despite these factors, it's crucial to continue finding fulfillment in our work and relishing the challenges it presents. However, it is also prudent to keep certain considerations in mind. When faced with a straightforward task, it's important to resist the urge to overcomplicate it. Avoid solving problems that do not yet exist, as this can lead to unnecessary complexities and delays.

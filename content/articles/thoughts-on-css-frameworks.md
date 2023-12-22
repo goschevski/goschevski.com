@@ -1,36 +1,34 @@
 ---
 collection: posts
 title: Thoughts on CSS Frameworks
-description: Developers use Foundation or Bootstrap unnecessarily, and they don't know what the output of their CSS code is. I will try to explain my viewpoint about these kinds of frameworks, what their flaws are, and when might be a good time to use them...
+description: Developers often use Foundation or Bootstrap without understanding the output of their CSS code. Let me explain my perspective on these frameworks, their flaws, and when it's appropriate to use them...
 createdAt: 2014-09-23
 tags:
   - css
 ---
 
-Developers use Foundation or Bootstrap unnecessarily, and they don't know what the output of their CSS code is. I will try to explain my viewpoint about these kinds of frameworks, what their flaws are, and when might be a good time to use them.
+In the realm of web development, CSS frameworks like Foundation and Bootstrap have gained immense popularity. However, it is important to critically examine their usage and understand their drawbacks. In this blog post, I will share my perspective on CSS frameworks, highlight their flaws, and discuss situations where they can be beneficial.
 
-### Learning
+### Learning: The Bootstrap Syndrome
 
-Newbies and juniors are coming down with something like jQuery syndrome, whereby they first learn how to use Bootstrap and Foundation, and later familiarize themselves with the core concepts of CSS. As my friend [Vladimir](https://github.com/vladimirsiljkovic) put it:
+One common trend among newcomers and junior developers is what I like to call the "Bootstrap Syndrome." Often, they first delve into using frameworks like Bootstrap and Foundation before gaining a solid understanding of core CSS concepts. To illustrate this point, my friend humorously compares it to giving a fire hose to a kid and turning on the water.
 
-> "It's like giving a fire hose to a kid and turning on the water."
-
-You can learn from frameworks, since they show, for example, useful image replacement techniques, grid setup. You can discover other smart concepts and learn how to use them.
+While frameworks can be valuable for learning, it's essential to prioritize understanding the underlying principles of CSS. By using frameworks, you can grasp helpful techniques like image replacement and grid setups. These frameworks introduce smart concepts that can enhance your CSS skills.
 
 ### Performance
 
-These frameworks are big. In fact, they are huge. Bootstrap minified is about 100kb, and Foundation is about 115kb. Yes, of course, you don't to have to include the whole framework, but probably there is no need for the partials either.
+Let's address the elephant in the room. CSS frameworks are undeniably hefty. Consider the examples of Bootstrap, which weighs around 100kb when minified, and Foundation, which comes in at approximately 115kb. Although you can cherry-pick specific components, many developers are unaware of the inner workings of the included grid system. In truth, most wouldn't utilize it if they possessed a deeper understanding of CSS grid concepts. Before incorporating a framework, it's worth asking yourself if your design truly necessitates a grid structure or if a more tailored solution would suffice. Don't overlook the simplicity of creating your own grid, as explained in this helpful [guide](https://css-tricks.com/dont-overthink-it-grids/).
 
-People include the grid module of the framework, and 90% of them are unaware of how that grid works. If they knew, they wouldn't use it. Rather they would create their own. Of course, the design you're coding must use a grid, but is that _always_ the case? After all, is it hard to [create a grid](http://css-tricks.com/dont-overthink-it-grids)?
+### When to Utilize CSS Frameworks
 
-### When to use them
+While CSS frameworks have their downsides, there are situations where they prove useful. They shine in scenarios involving wireframes, presentations, or the creation of admin panels. For developers who aren't extensively acquainted with CSS, frameworks can expedite the layout creation process.
 
-In some cases, it's useful to use frameworks with ready-made components, such as when creating wireframes, presentations or admin panels. They're also helpful tools for developers who are not sufficiently familiar with CSS, in that they allow them to create a layout quickly.
+### Embracing Boilerplates
 
-### What's the alternative?
-
-In a nutshell, use boilerplates. Create your starter folder or boilerplate, call it what you will. Create your set of mixins or styles that you use often. When you use frameworks, you start CSS with hundreds of lines of pre-written code. Ok, thousands. And when you initiate with your boilerplate, you only have what's necessary for your projects.
+In a nutshell, consider embracing boilerplates as an alternative approach. Craft your starter folder or boilerplate, equipped with a personal collection of frequently used mixins and styles. By starting from scratch rather than relying on extensive pre-written code, you'll have a leaner foundation tailored precisely to your project's needs.
 
 ### Conclusion
 
-Don't get me wrong, Bootstrap and Foundation are great, and you can learn a lot from looking at their code, but don't use them for every single project because 90% of the time, you don't need them.
+To conclude, Bootstrap and Foundation are undeniably excellent resources, and studying their code can be enlightening. However, it's important to exercise caution and avoid a one-size-fits-all mentality. In most cases, you likely won't require the full extent of these frameworks. So, be mindful of their weight and explore alternatives that allow you to strike a balance between convenience and efficiency.
+
+Remember, CSS frameworks are valuable tools, but they should not be your default choice for every project. Aim to be discerning, leverage your growing CSS expertise, and use frameworks judiciously to enhance your development process.

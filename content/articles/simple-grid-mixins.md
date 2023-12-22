@@ -11,8 +11,6 @@ tags:
 
 # Simple grid mixins
 
-Originally posted on [the Sass Way](http://thesassway.com/).
-
 Grid systems can be quite complicated. [960.gs](http://960.gs/), the mother of all grid systems, contains over 600 lines of code! And it's one of the simpler pure-CSS grid systems. I'm not a huge fan of scattering classes throughout your markup. Some people do like this approach, of course, but it's possible to build a grid system in Sass that doesn't require gratuitous use of classes. Instead, we can use mixins and style using existing classes and markup.
 
 Let's build a set of mixins that will allow us to do this. For our grid system I don't want to use floats, because sometimes I need to vertically center columns. Instead, I'll use the inline-block method which allows for vertical centering. And of course, I want the grid to be responsive.

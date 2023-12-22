@@ -45,7 +45,7 @@ One downside to image spriting is that sprite sheets are notoriously difficult t
 
 ## Compass to the rescue!
 
-Fortunately for us, Chris Eppstein’s [Compass](http://compass-style.org) project includes a robust suite of tools for creating and maintaining sprite sheets automatically. Compass can build your sprite sheet image, give you the coordinates of each sprite, allow you to control the layout and spacing of the sprites, and write the SCSS necessary to display each image. In short, Compass’s sprite tools will save you a ton of effort.
+Fortunately for us, Chris Eppstein’s [Compass](http://beta.compass-style.org) project includes a robust suite of tools for creating and maintaining sprite sheets automatically. Compass can build your sprite sheet image, give you the coordinates of each sprite, allow you to control the layout and spacing of the sprites, and write the SCSS necessary to display each image. In short, Compass’s sprite tools will save you a ton of effort.
 
 I’m not going to go over getting started with Compass here. If you are not familar with Compass please check out some tutorials before continuing.
 
@@ -199,4 +199,4 @@ $icons: sprite-map("toolbar/*.png", $spacing: 5px, $layout: diagonal);
 
 ## Digging deeper
 
-Believe it or not, there’s actually a lot more that you can do with Compass sprite sheets. More than I can cover in this simple tutorial. If you’re interested in learning more read the [official Spriting Tutorial](http://compass-style.org/help/tutorials/spriting/) and checkout [some of other docs here](http://compass-style.org/search/?q=sprites).
+Believe it or not, there’s actually a lot more that you can do with Compass sprite sheets. More than I can cover in this simple tutorial. If you’re interested in learning more read the [official Spriting Tutorial](http://beta.compass-style.org/help/tutorials/spriting/) and checkout [some of other docs here](http://beta.compass-style.org/search/?q=sprites).

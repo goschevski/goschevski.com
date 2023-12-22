@@ -1,26 +1,25 @@
 ---
 collection: posts
 title: Cloud hosting for developers
-description: If you are looking for a cloud hosting where you don't need to setup bunch of things before you even start deploying app, there is a solution...
+description: If you're on the hunt for cloud hosting that doesn't make you set up a ton of stuff before you can even get your app up and running, I've got a solution for you...
 createdAt: 2021-05-02
 tags:
   - devops
 ---
 
 ### Important note
+*This post is not sponsored by render.com in any way. I haven't contacted or spoken to them. The opinions shared here are my honest thoughts aimed at helping you. If render.com appreciates this post, they are welcome to provide some free stuff, which I would greatly appreciate.*
 
-This post is not sponsored by render.com anyhow. I never contacted them or spoke to them. This is my honest opinion, which I would like to share in order to help you guys. If they like what they read here, they are welcome to give me some free stuff. I wouldn't mind at all.
+### The problem
 
-### Problem
+When I was just 15 years old back in 2007, I remember spending countless hours trying to install Apache, PHP, and MySQL on my computer. I wasted precious coding time. That's when I stumbled upon XAMPP, and it was a game-changer. Fast forward ten years later when I had to set up services on AWS, and I found myself in a similar bind. Deciding which machine, how much memory, CPU, and dealing with other unknowns left me feeling overwhelmed. In recent years, I've noticed that developers and devops work has begun to overlap, requiring us to have knowledge in both areas.
 
-Back in 2007, I was 15 years old and trying to install Apache, PHP, and MySQL for the first time on my machine. I squandered many hours that I could have spent writing code. It was a revelation when I discovered XAMPP. When I had to set up a few services on AWS 10 years later, I felt the same sense of helplessness. I had to figure out which machine I want, how much memory, CPU, and other unknowns. Over the last few years, I've noticed that developer and devops work is increasingly overlapping, and we need to know a little bit about both.
+Many online tutorials show you how to buy a machine, copy code to it, and run a node process in the background, but that's not a realistic example. In the real world, your app will fail, and constantly logging in to restart the process is not ideal. You'll need a way to get notified when something breaks. Managing logs becomes important, and deploying code through git hooks beats manual uploading any day. Auto-scaling your app is a must-have. These are just the bare minimum requirements, and when you add microservices, private networks, shared storage, and more, the complexity grows beyond a developer's expertise.
 
-Online tutorials show how to buy a machine, scp code to it, and spin a node process in the background, however, this is not real-world example. Your app will fail, and you don't want to constantly login to the machine and restart the process. You'll also need something to notify you when it fails. You'll most likely want to aggregate logs somewhere. You'd like to deploy code via git hooks rather than manually uploading it every time. You want to auto-scale your app. That, in my opinion, is the bare minimum of requirements. When you consider microservices, private networks, shared storage, and so on, the story becomes increasingly complex and goes beyond the scope of a developer's knowledge.
+### Tools don't replace knowledge
 
-### Tools doesn't replace knowledge
+I've attempted to do everything myself, and I even wrote [about the wonders of Ansible](/the-mighty-ansible)—how it simplifies tasks. However, Ansible, or any other tool for that matter, won't solve all your problems. It helps, but it can't set up a server for you because it lacks the necessary knowledge—you must provide it. So even if you stumble upon the perfect tool like Ansible, be prepared to learn things you may not initially have an interest in.
 
-I tried doing everything by myself, and I even [wrote about ansible](/the-mighty-ansible) and how great it is, but ansible will not solve your problem. It will make things easier for you, but it will not set up a server for you because it does not know how; you must tell it how. So, even if you find the perfect tool, such as Ansible, you still need to learn a bunch of things that you may not be interested in.
+### [Render.com](https://render.com): A Solution That Simplifies Deployment
 
-### [Render.com](https://render.com)
-
-While looking for a solution to this problem, I came across render.com. I like websites that make you feel like you've been using them for years after only 3 minutes. **I successfully deployed a static site, a node.js app, and a dockerized node.js app in 15 minutes.** You want auto scale - boom, two clicks. I'm not concerned with machines, users, or permissions; I just want to run applications. I realize that if you know what you're doing, this is probably not the cheapest solution, but I saved so many hours and nerves that I'm willing to pay more for it.
+During my search for a solution to this problem, I discovered [render.com](https://render.com). The user experience of their website made it feel like I had been using it for years, all within just three minutes. **I successfully deployed static sites, node.js apps, and even dockerized node.js apps in just 15 minutes**. If you want auto-scaling, it's as easy as two clicks. I no longer worry about managing machines, users, or permissions—I just want to focus on running my applications. Admittedly, if you're a seasoned expert, render.com may not be the most cost-effective solution. However, the amount of time and sanity it has saved me makes it worth the slightly higher cost.
