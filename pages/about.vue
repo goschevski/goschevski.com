@@ -2,26 +2,20 @@
   <article class="about">
     <h2>About me</h2>
     <p>
-      I'm Aleksandar Goševski, software developer based in Serbia. I focus on combining modern technologies to build stable and sophisticated web applications and APIs. I started my journey with HTML &amp; CSS back in 2007, but I didn't stopped there. In the meanwhile I worked with variety of other technologies including PHP, JavaScript, Node.js, Go, etc.
+      I'm Aleksandar Goševski, a software developer based in Serbia. For me, it all started back in 2007 when I first dipped my toes into the world of HTML and CSS. Since then, my thirst for knowledge has led me to explore a diverse range of technologies, including PHP, JavaScript, Node.js, Go, and many more.
     </p>
     <p>
-      Currently working as a Staff Software Engineer at
-      <a href="https://www.vast.com/">Vast</a> (Acquired by
-      <a href="https://vroom.com">Vroom</a>).
+      I am currently thriving in my role as a Staff Software Engineer at <a href="https://www.vast.com/">Vast</a> (Acquired by <a href="https://vroom.com">Vroom</a>).
     </p>
     <p>
-      I'm passionate about my machine setup, always tweaking my
-      <a href="https://github.com/goschevski/dotfiles">dotfiles</a>.
+      One thing that truly sets me apart is my relentless pursuit of an optimized machine setup. I'm always fine-tuning my <a href="https://github.com/goschevski/dotfiles">dotfiles</a> to ensure a seamless and efficient coding environment.
     </p>
-
     <h3>Specialities</h3>
     <ul class="specialties">
-      <li>JavaScript (Node.js, express, koa, Nuxt.js, Vue, React)</li>
-      <li>HTML &amp; CSS (postcss, sass, accessibility, semantics)</li>
-      <li>Tools ((n)vim ❤️, tmux, zsh, ansible, git, gulp, vite, etc.)</li>
-      <li>
-        Other (design patterns, single-page apps, speed optimisation, etc.)
-      </li>
+      <li><strong>JavaScript</strong> - Throughout my career, I have worked extensively with JavaScript, from older libraries like jQuery and Backbone.js to more recent frameworks like Vue.js, enabling me to tackle diverse projects</li>
+      <li><strong>HTML &amp; CSS</strong> - While I'm currently focusing a bit less on CSS, I remain well-versed in semantic markup, accessibility, and the latest best practices in creating engaging web experiences.</li>
+      <li><strong>Tools</strong> - (neo)vim ❤️, tmux, zsh, ansible, git, gulp, vite, etc.)</li>
+      <li><strong>Other</strong> - design patterns, devops, speed optimisation, etc.</li>
     </ul>
   </article>
 </template>
