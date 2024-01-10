@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.1",
+    "@csstools/postcss-global-data": "^2.1.1",
+    "astro": "^4.1.1",
+    "markdown-it": "^14.0.0",
+    "postcss-preset-env": "^9.3.0",
+    "postcss-pxtorem": "^6.0.0",
+    "sanitize-html": "^2.11.0"
+  }
+}

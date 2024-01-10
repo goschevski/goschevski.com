@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/default.astro';
+import PostsList from '../components/PostsList.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf()
+);
+---
+<Layout>
+  <section aria-labelledby="articles-title">
+    <h1 id="articles-title" class="u-screenReaders">Articles</h1>
+
+    <PostsList posts={posts} />
+  </section>
+</Layout>

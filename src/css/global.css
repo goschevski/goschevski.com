@@ -1,0 +1,138 @@
+:root {
+  --font-primary: Bitter, serif;
+  --main-color: #186356;
+  --sidebar-width: 350px;
+}
+
+/* Media Queries */
+@custom-media --small (width >= 420px);
+@custom-media --medium (width >= 768px);
+@custom-media --large (width >= 1024px);
+@custom-media --xlarge (width >= 1280px);
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Bitter'), url('/fonts/bitter-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter'), url('/fonts/bitter-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Bitter'), url('/fonts/bitter-600.woff2') format('woff2');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 1.3vw, 18px);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+
+  &.lock-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--main-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+pre {
+  padding: 16px;
+  border-radius: 5px;
+  background-color: #252739;
+  white-space: break-spaces;
+}
+
+a:hover {
+  color: #333;
+}
+
+.main a {
+  font-weight: 400;
+}
+.main strong  {
+  font-weight: 600;
+}
+
+.main a:focus {
+  outline: none;
+  padding: 2px 10px;
+  background: var(--main-color);
+  color: white;
+  box-shadow: 2px 2px 0 black;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* utilities */
+
+.u-screenReaders {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: polygon(0 0, 0 0, 0 0) !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+}

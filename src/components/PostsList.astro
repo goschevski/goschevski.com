@@ -1,0 +1,30 @@
+---
+import PostMeta from '../components/PostMeta.astro';
+const { posts } = Astro.props;
+---
+
+{
+  posts.map((post) => (
+    <article>
+      <h2
+        class="article-title"
+      >
+        <a href={`/${post.slug}`}>
+          {post.data.title}
+        </a>
+      </h2>
+      <PostMeta post={post} />
+      <p>{post.data.description}</p>
+    </article>
+  ))
+}
+
+<style>
+article {
+  margin-bottom: 3em;
+}
+
+.article-title {
+  margin-bottom: 0;
+}
+</style>

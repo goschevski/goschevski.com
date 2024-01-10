@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/default.astro';
+import PostsList from '../../components/PostsList.astro';
+import { getCollection } from 'astro:content';
+const { tag } = Astro.params;
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+
+  const allTags = posts.reduce((acc, post) => {
+    return [...acc, ...post.data.tags]
+  }, [])
+
+  const tags = [...new Set(allTags)]
+
+  return tags.map((tag) => ({
+    params: { tag }
+  }));
+}
+
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.tags.includes(tag))
+  .sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
+---
+<Layout title={`Tag: #${tag}`}>
+  <section aria-labelledby="tag-title">
+    <h1 id="tag-title">#{tag}</h1>
+
+    <PostsList posts={posts} />
+  </section>
+</Layout>

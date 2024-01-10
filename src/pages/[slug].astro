@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/default.astro';
+import PostMeta from '../components/PostMeta.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+<Layout title={post.data.title} description={post.data.description}>
+  <article>
+    <h1 transition:name={`title-${post.slug}`}>{post.data.title}</h1>
+    <PostMeta post={post} />
+    <Content />
+  </article>
+</Layout>

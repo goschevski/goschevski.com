@@ -1,0 +1,43 @@
+---
+const { post } = Astro.props;
+---
+
+<div class="wrapper">
+  <time datetime={post.data.createdAt.toISOString()}>
+    {post.data.createdAt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+  </time>
+  in
+  <ul class="tags">
+    {
+      post.data.tags.map((tag) => (
+        <li>
+          <a href={`/tags/${tag}`}>#{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+.wrapper {
+  font-size: 0.9rem;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+
+  &::after {
+    content: '•';
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  &:last-child::after {
+    content: '';
+  }
+}
+</style>
