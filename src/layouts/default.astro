@@ -1,18 +1,25 @@
 ---
 import Sidebar from '../components/Sidebar.astro';
 import MenuButton from '../components/MenuButton.astro';
+import { ViewTransitions } from 'astro:transitions';
 const { title, description } = Astro.props;
 import { pageTitle, pageDescription } from '../consts';
 import '../css/global.css';
 ---
 
 <script>
-const btn = document.querySelector("[data-button]");
-const wrapper = document.querySelector("[data-wrapper]");
-
-btn.addEventListener("click", () => {
-  btn.classList.toggle("is-active");
-  wrapper.classList.toggle("menu-opened");
+const setup = () => {
+  const btn = document.querySelector("[data-button]");
+  const wrapper = document.querySelector("[data-wrapper]");
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("is-active");
+    document.documentElement.classList.toggle("is-locked");
+    wrapper.classList.toggle("menu-opened");
+  })
+}
+setup()
+document.addEventListener('astro:after-swap', () => {
+  setup()
 })
 </script>
 
@@ -25,6 +32,7 @@ btn.addEventListener("click", () => {
     <link rel="preload" href="/fonts/bitter-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/bitter-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <ViewTransitions />
   </head>
   <body>
     <div data-wrapper>

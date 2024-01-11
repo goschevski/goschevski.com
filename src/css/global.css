@@ -36,6 +36,11 @@
 
 html {
   box-sizing: border-box;
+
+  &.is-locked,
+  &.is-locked > body {
+    overflow: hidden;
+  }
 }
 
 *,

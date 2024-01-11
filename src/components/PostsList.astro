@@ -8,6 +8,7 @@ const { posts } = Astro.props;
     <article>
       <h2
         class="article-title"
+        transition:name={`title-${post.slug}`}
       >
         <a href={`/${post.slug}`}>
           {post.data.title}

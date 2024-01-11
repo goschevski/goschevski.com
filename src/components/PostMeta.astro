@@ -2,7 +2,10 @@
 const { post } = Astro.props;
 ---
 
-<div class="wrapper">
+<div
+  class="wrapper"
+  transition:name={`meta-${post.slug}`}
+>
   <time datetime={post.data.createdAt.toISOString()}>
     {post.data.createdAt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
   </time>
