@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
     "@csstools/postcss-global-data": "^2.1.1",
     "astro": "^4.1.1",
     "markdown-it": "^14.0.0",

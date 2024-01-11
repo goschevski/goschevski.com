@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+import { domain } from './src/consts';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [],
+  site: domain,
+  integrations: [sitemap()],
 });
