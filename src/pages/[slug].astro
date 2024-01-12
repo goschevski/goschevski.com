@@ -2,6 +2,7 @@
 import Layout from '../layouts/default.astro';
 import PostMeta from '../components/PostMeta.astro';
 import { getCollection } from 'astro:content';
+import { domain, pageTitle } from '../consts'
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -13,8 +14,38 @@ export async function getStaticPaths() {
 
 const post = Astro.props;
 const { Content } = await post.render();
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org/",
+  "@type": "BlogPosting",
+  "@id": `${domain}/${post.slug}`,
+  "mainEntityOfPage": `${domain}/${post.slug}`,
+  "headline": `${post.data.title}`,
+  "name": `${post.data.title}`,
+  "description": `${post.data.description}`,
+  "datePublished": `${post.data.createdAt.toISOString()}`,
+  "dateModified": `${post.data.createdAt.toISOString()}`,
+  "author": {
+    "@type": "Person",
+    "@id": `${domain}/about`,
+    "url": `${domain}/about`,
+    "name": "Aleksandar Gosevski"
+  },
+  "url": `${domain}/${post.slug}`,
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": `${domain}`,
+    "name": `${pageTitle}`,
+  },
+  "about": post.data.tags.map((tag) => ({
+    "@type": "Thing",
+    "@id": `${domain}/tags/${tag}`,
+    "name": tag
+  }))
+})
 ---
 <Layout title={post.data.title} description={post.data.description}>
+  <script type="application/ld+json" set:html={schema}></script>
   <article>
     <h1 transition:name={`title-${post.slug}`}>{post.data.title}</h1>
     <PostMeta post={post} />
