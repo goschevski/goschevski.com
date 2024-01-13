@@ -4,7 +4,10 @@ import MenuButton from '../components/MenuButton.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { title, description } = Astro.props;
 import { pageTitle, pageDescription, manifest } from '../consts';
+import socialMediaImage from '../img/social.png';
 import '../css/global.css';
+
+const socialImageUrl = new URL(socialMediaImage.src, Astro.url);
 ---
 
 <script>
@@ -29,8 +32,25 @@ document.addEventListener('astro:after-swap', () => {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title ? `${title} | ${pageTitle}` : pageTitle}</title>
     <meta name="description" content={description || pageDescription}>
+
+    <!-- preload important fonts -->
     <link rel="preload" href="/fonts/bitter-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/bitter-400.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- social meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={Astro.url}>
+    <meta property="og:title" content={title || pageTitle}>
+    <meta property="og:image" content={socialImageUrl}>
+    <meta property="og:description" content={description || pageDescription}>
+    <meta property="og:site_name" content={pageTitle}>
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content={Astro.url}>
+    <meta name="twitter:title" content={title || pageTitle}>
+    <meta name="twitter:description" content={description || pageDescription}>
+    <meta name="twitter:image" content={socialImageUrl}>
+
     <!-- Favicons. -->
 		<link
 			rel="apple-touch-icon"
@@ -113,6 +133,8 @@ document.addEventListener('astro:after-swap', () => {
 		<script is:inline src="/registerSW.js"></script>
 		<link rel="manifest" href="/manifest.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- transitions -->
     <ViewTransitions />
   </head>
   <body>
