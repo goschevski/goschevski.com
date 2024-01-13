@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/default.astro';
+---
+
+<Layout title="Oops!">
+  <section aria-labelledby="error-title">
+    <h1 id="error-title">Oops, you found it!</h1>
+
+    <p>The one page no one wants to see.</p>
+    <p>Try going back to the <a href="/">homepage</a> to find what you’re looking for.</p>
+
+    <span class="not-found">404</span>
+  </section>
+</Layout>
+
+<style>
+.not-found {
+  font-size: 300px;
+  margin-top: 100px;
+  color: #eee;
+}
+</style>
